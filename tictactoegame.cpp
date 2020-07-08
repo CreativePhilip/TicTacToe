@@ -15,6 +15,7 @@ void TicTacToeGame::resetGameState() {
     }
 
     currentPlayer = Player::X;
+    gameState = GameState::Started;
 }
 
 void TicTacToeGame::printGameState() {

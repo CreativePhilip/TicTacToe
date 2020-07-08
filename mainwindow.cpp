@@ -64,6 +64,9 @@ void MainWindow::gameButtonPressedHandler()
     game.move(cellNumber);
     updateUiGameState();
 
+    game.printGameState();
+    qDebug() << "";
+
     if (game.getGameState() == GameState::Finished) {
         QMessageBox msg;
         msg.setText("Game over");
